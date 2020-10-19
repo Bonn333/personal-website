@@ -2,7 +2,6 @@ body {
     background-color: #10061b;
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     color: #fff;
-    overflow-y: hidden;
 }
 
 .navbar {
@@ -10,27 +9,33 @@ body {
 }
 
 #masthead {
+    height: 100%;
     height: 100vh;
     background: linear-gradient(67deg, rgba(9,0,18,1) 0%, rgba(16,6,27,1) 100%);
     z-index: 4;
     animation: xd 10s ease;
 }
 
-.masthead-content {
+#masthead > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
     position: absolute;
-    text-align: center;
-    z-index: 5;
-    top: 40%;
-    right: 0;
+    top: 0;
     left: 0;
-    margin: 0 auto;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none; 
 }
-
+#masthead div:nth-last-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .bg-dark {
     background: 0 0 !important;
 }
