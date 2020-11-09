@@ -14,6 +14,7 @@ body {
     background: linear-gradient(67deg, rgba(9,0,18,1) 0%, rgba(16,6,27,1) 100%);
     z-index: 4;
     animation: xd 10s ease;
+    overflow: hidden;
 }
 
 #masthead > div {
@@ -36,6 +37,15 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.lead {
+    text-align: center;
+ }
+ 
+ .lead > a {
+   margin-bottom: 0.5em;
+ }
+
 .bg-dark {
     background: 0 0 !important;
 }
